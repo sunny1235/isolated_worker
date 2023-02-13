@@ -77,6 +77,16 @@ void main() async {
     }
 }
 ```
+
+## Set File Path
+
+You may have to include you logic file in your `pubspec.yaml` file as shown below under your assets. Remember this is an important step. If skipped you may not get the desired output.
+
+```dart
+  assets:
+    - your_dir/myModule1.js /// path of your js file
+```
+
 ## Shared Platform Worker
 There might be a case where we need to use both `IsolatedWorker` and `JsIsolatedWorker`. There are many ways to go about it. We can use conditional import, dependency injections, or `WorkerDelegator`.
 ### WorkerDelegator
